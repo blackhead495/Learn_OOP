@@ -1,9 +1,12 @@
 package Webinars.Webinar1;
 
+//    @Liberate520
+// мой тг
 public class Main {
     public static void main(String[] args) {
-        Product product1 = new Product("Twix", 100);
-        Product product2 = new Product();
+        VendingMachine vendingMachine = new VendingMachine();
 
+        Bottle bottle = new Bottle(100, "Sprite", 2);
+        System.out.println(bottle);
     }
 }

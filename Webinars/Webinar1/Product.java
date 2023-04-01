@@ -1,23 +1,32 @@
 package Webinars.Webinar1;
 
-public class Product {
+public abstract class Product {
+    private double cost;
     private String name;
-    private double price;
-    private double value;
 
-    public Product(String name, double price) {
+    public Product(double cost, String name) {
+        this.cost = cost;
         this.name = name;
-        this.price = price;
     }
-    public Product(){
 
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 
     public String getName() {
         return name;
     }
 
-    public double getPrice() {
-        return price;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return name + ": " + cost;
     }
 }
